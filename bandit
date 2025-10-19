@@ -2,7 +2,17 @@ ssh -p 2220 bandit0@bandit.labs.overthewire.org, pass- bandit0
  bandit1 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If: cat ./-, thats how u read a dashed file
  bandit2- 263JGJPfgU6LtdEvgfWU1XP5yac29mF: cat /home/bandit2/* , theres one spced filename so why not cat evrthing in the dir
  bandit3- MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx: cat ...filename
- bandit4- 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ :find . -type f -print0 | sort -z |  xargs -0 cat
- bandit5- 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw: 
- 
+ bandit4- 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ :find . -type f -print0 | sort -z |  xargs -0 cat, this command finds all
+   files in the current directory and
+   its subdirectories, sorts them
+   alphabetically by name, and then
+   concatenates their contents
+ bandit5- 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw:   find . -type f -size 1033c -not-executable
+ bandit6- HWasnPhtq9AVKe0dmk45nxy20cvUa6EG: find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+ bandit7- morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj: sttings data.txt | grep millionth 
+ bandit8- dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc: sort data.txt | uniq -u , sort by the onl that appears once
+ bandit9- 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM: strings data.txt | grep "=="
+ bandit10- FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey: strings data.txt | grep "==", redirect to a file then decode
+ bandit11- dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr: cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m', tr translates/deletes chars: tr 'A-Za-z' 'N-ZA-Mn-za-m' swaps uppercase A-M to N-Z, N-Z to A-M (ROT13 upper), same for lowercase
+ bandit12- 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4: 
    
