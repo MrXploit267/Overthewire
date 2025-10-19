@@ -1,0 +1,8 @@
+ssh -p 2220 bandit0@bandit.labs.overthewire.org, pass- bandit0
+ bandit1 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If: cat ./-, thats how u read a dashed file
+ bandit2- 263JGJPfgU6LtdEvgfWU1XP5yac29mF: cat /home/bandit2/* , theres one spced filename so why not cat evrthing in the dir
+ bandit3- MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx: cat ...filename
+ bandit4- 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ :find . -type f -print0 | sort -z |  xargs -0 cat
+ bandit5- 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw: 
+ 
+   
